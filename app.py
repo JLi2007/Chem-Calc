@@ -5,7 +5,9 @@ import re
 findElements = r"[A-Z][a-z]?\d?"
 findMultiplier = r'^\d+'
 
-st.write("Tanish Munjal")
+st.subheader("Example Input: H2O*4CH4")
+st.write("use * for molecules together and don't use brackets")
+st.header("Munjal's Chem Calc")
 compound = st.text_input("Enter your compound:", "")
 
 def parseCompound(c):
@@ -66,3 +68,13 @@ def calcMm(c):
 
 if(compound != ""):
     st.write(f"Molar mass = {calcMm(compound)}")
+
+st.write("Tanish Munjal")
+col1, col2= st.columns(2)
+
+with col1:
+    st.image("assets/freaky-munj.png")
+with col2:
+    st.image("assets/munj.png")
+    
+st.image("assets/base.png")
